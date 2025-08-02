@@ -1125,7 +1125,6 @@ const LandingPage = () => {
           </a>
         </section>
 
-        {/* How It Works Section */}
         <section id="how-it-works" className="py-16 text-center bg-white rounded-xl shadow-lg mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-10">What modulet.dev offers?</h2>
           <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
@@ -1203,6 +1202,30 @@ const LandingPage = () => {
         </section>
 
 
+        {/* How It Works Section */}
+        <section className="py-16 text-center bg-white rounded-xl shadow-lg mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-10">How modulet.dev works</h2>
+          <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-10 px-6">
+            {[
+              { title: 'You tell me what you need', description: 'Describe your workflow or pain points—what’s repetitive, manual, or missing.' },
+              { title: 'I design & show you a working UI', description: 'You’ll see a prototype you can click through and provide feedback on.' },
+              { title: 'We build it out together', description: 'Once it clicks for you, we iterate quickly and integrate it into your workflow.' },
+              { title: 'Flexible pricing & ongoing support', description: 'Fair pricing based on scope. I offer monthly maintenance to keep things smooth.' },
+            ].map((step, index) => (
+              <div key={index} className="flex items-start bg-gray-50 rounded-lg p-6 sm:p-8 shadow-sm">
+                <div className="flex-shrink-0 mr-5 mt-1">
+                  <svg className="h-8 w-8 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-1">{step.title}</h3>
+                  <p className="text-gray-600">{step.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
 
         {/* Bottom CTA */}
         <section className="text-center py-16 bg-blue-500 text-white rounded-xl shadow-xl">
