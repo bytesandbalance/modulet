@@ -1109,43 +1109,41 @@ const LandingPage = () => {
         {/* Hero Section */}
         <section className="text-center py-20 bg-blue-400 text-white rounded-xl shadow-xl mb-12">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">
-            Custom Business App Modules
+            Turn your business into an app.
           </h1>
           <p className="text-xl sm:text-2xl font-light mb-8 max-w-3xl mx-auto">
-            Start small, scale smart. Instant improvements without replacing your legacy systems.
+            Custom. Clean. Feedback-driven. No bloated tools.
           </p>
           <a
-            href="#how-it-works"
-            className="inline-flex items-center px-8 py-4 border border-transparent text-lg font-semibold rounded-full shadow-lg text-blue-600 bg-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white transition duration-300 transform hover:-translate-y-1"
+            href="https://calendly.com/pflashgary" // Placeholder for actual contact page
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-10 py-5 border border-transparent text-xl font-semibold rounded-full shadow-lg text-blue-700 bg-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white transition duration-300 transform hover:-translate-y-1"
           >
-            See it in Action
-            <svg className="ml-3 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10.293 15.707a1 1 0 010-1.414L14.586 10H4a1 1 0 110-2h10.586l-4.293-4.293a1 1 0 011.414-1.414l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414 0z" clipRule="evenodd"></path></svg>
+            Book a free consult
+            <svg className="ml-3 -mr-1 w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10.293 15.707a1 1 0 010-1.414L14.586 10H4a1 1 0 110-2h10.586l-4.293-4.293a1 1 0 011.414-1.414l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414 0z" clipRule="evenodd"></path></svg>
           </a>
         </section>
 
         {/* How It Works Section */}
         <section id="how-it-works" className="py-16 text-center bg-white rounded-xl shadow-lg mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-10">How modulet.de Works</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-10">What modulet.dev offers?</h2>
           <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
             <div className="flex flex-col items-center">
               <div className="w-16 h-16 flex items-center justify-center bg-blue-50 text-blue-500 rounded-full text-3xl font-bold mb-4">1</div>
-              <h3 className="text-xl font-semibold mb-2">Small modules, Big Impact</h3>
-              <p className="text-gray-600">We offer focused modules that solve one problem at a time.</p>
+              <h3 className="text-xl font-semibold mb-2">Custom web apps from scratch</h3>
             </div>
             <div className="flex flex-col items-center">
               <div className="w-16 h-16 flex items-center justify-center bg-green-100 text-green-600 rounded-full text-3xl font-bold mb-4">2</div>
-              <h3 className="text-xl font-semibold mb-2">Try, Feedback, Improve</h3>
-              <p className="text-gray-600">Businesses can try a module, give feedback, and we refine it together.</p>
+              <h3 className="text-xl font-semibold mb-2">Start with working frontend demos</h3>
             </div>
             <div className="flex flex-col items-center">
               <div className="w-16 h-16 flex items-center justify-center bg-yellow-100 text-yellow-600 rounded-full text-3xl font-bold mb-4">3</div>
-              <h3 className="text-xl font-semibold mb-2">No Risky Replacements</h3>
-              <p className="text-gray-600">No need for full system overhauls – just fast, effective upgrades.</p>
+              <h3 className="text-xl font-semibold mb-2">Tailored to your business workflows</h3>
             </div>
             <div className="flex flex-col items-center">
               <div className="w-16 h-16 flex items-center justify-center bg-red-100 text-red-600 rounded-full text-3xl font-bold mb-4">4</div>
-              <h3 className="text-xl font-semibold mb-2">Rapid Deployment</h3>
-              <p className="text-gray-600">Get your app live and working in days, not months.</p>
+              <h3 className="text-xl font-semibold mb-2">Light monthly support</h3>
             </div>
           </div>
         </section>
@@ -1166,17 +1164,35 @@ const LandingPage = () => {
             ))}
           </div>
         </section>
-
         {/* Use Cases Section */}
         <section className="py-16 bg-blue-50 rounded-xl shadow-lg mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-10 text-center">Who Benefits from modulet.de?</h2>
-          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-10 text-center">Who Benefits from modulet.dev?</h2>
+          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
             {[
-              { title: 'Coaches & Trainers', description: 'Automate scheduling, client onboarding, and progress tracking.' },
-              { title: 'Rental Services', description: 'Manage bookings, inventory, and customer communications effortlessly.' },
-              { title: 'Course Creators', description: 'Streamline student enrollment, content delivery, and feedback collection.' },
-              { title: 'Local Event Planners', description: 'Simplify event registrations, attendee management, and communication.' },
-              { title: 'Digital Products & SaaS Tools', description: 'Automate user onboarding, subscription management, and support workflows.' },
+              {
+                title: 'Coaches & Therapists',
+                description: 'Manage scheduling, progress tracking, and client notes all in one place.'
+              },
+              {
+                title: 'Event Planners',
+                description: 'Handle registrations, payments, guest lists, and follow-ups with ease.'
+              },
+              {
+                title: 'Rental Services',
+                description: 'Automate bookings, contracts, and inventory tracking effortlessly.'
+              },
+              {
+                title: 'Tutors & Course Creators',
+                description: 'Offer lessons, track student progress, and manage content delivery smoothly.'
+              },
+              {
+                title: 'Freelancers & Creatives',
+                description: 'Provide client portals, project tracking, and delivery systems.'
+              },
+              {
+                title: 'Local Retail & Services',
+                description: 'Support booking, loyalty, delivery, and inventory tools tailored to your store.'
+              },
             ].map((useCase, index) => (
               <div key={index} className="bg-white rounded-xl shadow-md p-6 transform transition duration-300 hover:scale-105 hover:shadow-xl">
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">{useCase.title}</h3>
@@ -1186,28 +1202,7 @@ const LandingPage = () => {
           </div>
         </section>
 
-        {/* Why blocks Section */}
-        <section className="py-16 text-center bg-white rounded-xl shadow-lg mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-10">Why Choose modulet.de?</h2>
-          <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-6">
-            {[
-              { title: 'Save Time', description: 'Ready-to-use blocks eliminate manual tasks, freeing up your valuable time.' },
-              { title: 'Launch in Days', description: 'Our plug-and-play approach means rapid deployment, not lengthy projects.' },
-              { title: 'Keep Existing Systems', description: 'Integrate seamlessly with your current tools, no disruptive replacements needed.' },
-              { title: 'Collaborative Improvement', description: 'We work with you to continuously refine and expand your business app.' },
-            ].map((reason, index) => (
-              <div key={index} className="flex items-start bg-gray-50 rounded-lg p-5 shadow-sm">
-                <div className="flex-shrink-0 mr-4">
-                  <svg className="h-8 w-8 text-blue-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-800 mb-1">{reason.title}</h3>
-                  <p className="text-gray-600">{reason.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
+
 
         {/* Bottom CTA */}
         <section className="text-center py-16 bg-blue-500 text-white rounded-xl shadow-xl">
@@ -1224,9 +1219,25 @@ const LandingPage = () => {
         </section>
 
         {/* Footer */}
-        <footer className="text-center text-gray-600 text-sm mt-12 py-4">
-          &copy; {new Date().getFullYear()} modulet.de. All rights reserved.
+        <footer className="bg-gray-100 text-gray-700 py-10 border-t border-gray-200">
+          <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="text-center md:text-left">
+              <h4 className="text-lg font-semibold text-gray-800">modulet.dev</h4>
+              <p className="text-sm mt-1">Custom lean apps for small businesses, fast.</p>
+            </div>
+
+            <div className="text-center md:text-right">
+              <p className="text-sm">
+                📧 <a href="mailto:pflashgary@gmail.com" className="underline hover:text-gray-900">pflashgary@gmail.com</a>
+              </p>
+              <p className="text-sm mt-1">
+                🔗 <a href="https://www.linkedin.com/in/pflashgary/" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-900">LinkedIn</a>
+              </p>
+            </div>
+          </div>
         </footer>
+
+
       </div>
 
       {/* Demo Modal - Conditionally rendered */}
