@@ -1003,7 +1003,90 @@ const AutomationWorkflowVisualizer = () => {
   );
 };
 
-// --- END CONSOLIDATED DEMO COMPONENTS ---
+// --- START NEW Jovyne Showcase Component ---
+const JovyneAppShowcase = () => {
+  return (
+    <div className="min-h-screen bg-gray-50 p-4 sm:p-6 lg:p-8 font-sans">
+      <div className="max-w-4xl mx-auto">
+        <div className="bg-white rounded-xl shadow-lg p-6 sm:p-8 text-center relative overflow-hidden">
+          {/* Live Demo Badge */}
+          <div className="absolute top-0 right-0 bg-green-500 text-white text-xs font-bold px-4 py-1 rounded-bl-lg">
+            LIVE DEMO
+          </div>
+
+          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            Jovyne: A Full-Stack Showcase
+          </h1>
+          <p className="text-lg text-gray-700 mb-8">
+            This is my first full-stack application, a platform that connects event planners with other service providers and helpers. It demonstrates my ability to build a comprehensive, real-world application from the ground up.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left mb-10">
+            <div className="flex items-start bg-blue-50 p-4 rounded-lg shadow-sm">
+              <div className="flex-shrink-0 text-blue-500 mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-users-round"><path d="M18 21a8 8 0 0 0-16 0" /><circle cx="10" cy="8" r="5" /><path d="M22 20c0-1.5-1-2.9-3.5-3.8A4 4 0 1 0 19 20" /></svg>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800">Seamless Collaboration</h3>
+                <p className="text-gray-600 mt-1">
+                  A platform to connect event planners with the helpers they need, from decorators to photographers.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start bg-green-50 p-4 rounded-lg shadow-sm">
+              <div className="flex-shrink-0 text-green-500 mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-layout-dashboard"><rect width="7" height="9" x="3" y="3" rx="1" /><rect width="7" height="5" x="14" y="3" rx="1" /><rect width="7" height="9" x="14" y="12" rx="1" /><rect width="7" height="5" x="3" y="16" rx="1" /></svg>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800">Comprehensive Dashboard</h3>
+                <p className="text-gray-600 mt-1">
+                  Organize clients, manage tasks, track invoicing, and find new project opportunities, all in one place.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start bg-yellow-50 p-4 rounded-lg shadow-sm">
+              <div className="flex-shrink-0 text-yellow-500 mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-search"><circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" /></svg>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800">Public Searchability</h3>
+                <p className="text-gray-600 mt-1">
+                  Allows event planners and helpers to be discovered by people looking to organize parties, weddings, and work events.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start bg-purple-50 p-4 rounded-lg shadow-sm">
+              <div className="flex-shrink-0 text-purple-500 mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-code"><polyline points="16 18 22 12 16 6" /><polyline points="8 6 2 12 8 18" /></svg>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800">Demonstrates Full-Stack Skills</h3>
+                <p className="text-gray-600 mt-1">
+                  A live application showcasing proficiency in both front-end and back-end development.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8">
+            <a
+              href="https://jovyne.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-8 py-4 border border-transparent text-lg font-semibold rounded-full shadow-md text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400 transition duration-300 ease-in-out transform hover:-translate-y-1"
+            >
+              Explore the Live Demo
+              <svg className="ml-3 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10.293 15.707a1 1 0 010-1.414L14.586 10H4a1 1 0 110-2h10.586l-4.293-4.293a1 1 0 011.414-1.414l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414 0z" clipRule="evenodd"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+// --- END NEW Jovyne Showcase Component ---
 
 // Placeholder for icons (now uses Lucide React components)
 const IconPlaceholder = ({ children }) => (
@@ -1014,6 +1097,8 @@ const IconPlaceholder = ({ children }) => (
 
 const DemoModal = ({ demoContent, title, onClose }) => {
   if (!demoContent) return null;
+
+  const DemoComponent = demoContent;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-75 overflow-y-auto">
@@ -1033,7 +1118,7 @@ const DemoModal = ({ demoContent, title, onClose }) => {
         </div>
         {/* Demo Content Area */}
         <div className="flex-grow overflow-y-auto">
-          {demoContent}
+          <DemoComponent />
         </div>
       </div>
     </div>
@@ -1050,6 +1135,8 @@ const LandingPage = () => {
 
   // Define your demos for the sidebar
   const demos = [
+    // Jovyne is now the first item in the list
+    { id: 'jovyne-showcase', title: 'Jovyne: Event Platform', component: JovyneAppShowcase, icon: <Calendar size={20} /> },
     { id: 'business-dashboard', title: 'Business Overview Dashboard', component: BusinessDashboard, icon: <LayoutDashboard size={20} /> },
     { id: 'newsletter-tracker', title: 'Newsletter & Campaign Analytics', component: NewsletterCampaignTracker, icon: <Mail size={20} /> },
     { id: 'bookings-events', title: 'Event & Booking Tracker', component: BookingsEventOverview, icon: <Calendar size={20} /> },
@@ -1059,9 +1146,7 @@ const LandingPage = () => {
   ];
 
   const openDemo = (demo) => {
-    setCurrentDemo(demo.component);
-    console.log("Opening demo:", demo.component);
-
+    setCurrentDemo(() => demo.component);
     setCurrentDemoTitle(demo.title);
     setShowDemoModal(true);
   };
@@ -1078,17 +1163,24 @@ const LandingPage = () => {
     <div className="relative min-h-screen bg-gray-50 font-sans text-gray-900">
       {/* Fixed Sidebar for Demos (Desktop) */}
       <div className="hidden lg:block fixed right-0 top-0 h-full w-72 bg-white shadow-lg p-6 overflow-y-auto z-40 border-l border-gray-100">
-        <h3 className="text-xl font-bold text-gray-800 mb-6">Explore Our Modules</h3>
+        <h3 className="text-xl font-bold text-gray-800 mb-6">Live Demos & Showcases</h3>
         <nav className="space-y-4">
           {demos.map((demo) => (
             <button
               key={demo.id}
               onClick={() => openDemo(demo)}
-              className="flex items-center w-full p-3 bg-white rounded-lg shadow-sm hover:bg-blue-50 hover:shadow-md transition duration-200 ease-in-out transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="flex items-center w-full p-3 bg-white rounded-lg shadow-sm hover:bg-blue-50 hover:shadow-md transition duration-200 ease-in-out transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-blue-400 relative"
             >
               <IconPlaceholder>{demo.icon}</IconPlaceholder>
               <span className="font-medium text-gray-700 text-left flex-grow">{demo.title}</span>
-              <svg className="ml-2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
+              {demo.live && (
+                <span className="text-xs font-bold text-green-700 bg-green-200 rounded-full px-2 py-0.5 ml-2">
+                  LIVE
+                </span>
+              )}
+              <svg className="ml-2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
+              </svg>
             </button>
           ))}
         </nav>
@@ -1207,7 +1299,7 @@ const LandingPage = () => {
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-10">How modulet.dev works</h2>
           <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-10 px-6">
             {[
-              { title: 'You tell me what you need', description: 'Describe your workflow or pain points—what’s repetitive, manual, or missing.' },
+              { title: 'You tell me what you need', description: 'Describe your workflow or pain points, what’s repetitive, manual, or missing.' },
               { title: 'I design & show you a working UI', description: 'You’ll see a prototype you can click through and provide feedback on.' },
               { title: 'We build it out together', description: 'Once it clicks for you, we iterate quickly and integrate it into your workflow.' },
               { title: 'Flexible pricing & ongoing support', description: 'Fair pricing based on scope. I offer monthly maintenance to keep things smooth.' },
