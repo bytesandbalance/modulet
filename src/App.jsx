@@ -1003,8 +1003,8 @@ const AutomationWorkflowVisualizer = () => {
   );
 };
 
-// --- START NEW Jovyne Showcase Component ---
-const JovyneAppShowcase = () => {
+// --- START NEW Jovial Showcase Component ---
+const JovialAppShowcase = () => {
   return (
     <div className="min-h-screen bg-gray-50 p-4 sm:p-6 lg:p-8 font-sans">
       <div className="max-w-4xl mx-auto">
@@ -1015,7 +1015,7 @@ const JovyneAppShowcase = () => {
           </div>
 
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            Jovyne: A Full-Stack Showcase
+            Jovial: A Full-Stack Showcase
           </h1>
           <p className="text-lg text-gray-700 mb-8">
             This is my first full-stack application, a platform that connects event planners with other service providers and helpers. It demonstrates my ability to build a comprehensive, real-world application from the ground up.
@@ -1070,7 +1070,7 @@ const JovyneAppShowcase = () => {
 
           <div className="mt-8">
             <a
-              href="https://jovyne.vercel.app/"
+              href="https://jovial.modulet.de/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-4 border border-transparent text-lg font-semibold rounded-full shadow-md text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400 transition duration-300 ease-in-out transform hover:-translate-y-1"
@@ -1086,7 +1086,7 @@ const JovyneAppShowcase = () => {
     </div>
   );
 };
-// --- END NEW Jovyne Showcase Component ---
+// --- END NEW Jovial Showcase Component ---
 
 // Placeholder for icons (now uses Lucide React components)
 const IconPlaceholder = ({ children }) => (
@@ -1135,8 +1135,8 @@ const LandingPage = () => {
 
   // Define your demos for the sidebar
   const demos = [
-    // Jovyne is now the first item in the list
-    { id: 'jovyne-showcase', title: 'Jovyne: Event Platform', component: JovyneAppShowcase, icon: <Calendar size={20} /> },
+    // Jovial is now the first item in the list
+    { id: 'Jovial-showcase', title: 'Jovial: Event Platform', component: JovialAppShowcase, icon: <Calendar size={20} /> },
     { id: 'business-dashboard', title: 'Business Overview Dashboard', component: BusinessDashboard, icon: <LayoutDashboard size={20} /> },
     { id: 'newsletter-tracker', title: 'Newsletter & Campaign Analytics', component: NewsletterCampaignTracker, icon: <Mail size={20} /> },
     { id: 'bookings-events', title: 'Event & Booking Tracker', component: BookingsEventOverview, icon: <Calendar size={20} /> },
@@ -1201,7 +1201,7 @@ const LandingPage = () => {
         {/* Hero Section */}
         <section className="text-center py-20 bg-blue-400 text-white rounded-xl shadow-xl mb-12">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">
-            Turn your business into an app.
+            I Build Custom Web Applications for Small to Medium Businesses.
           </h1>
           <p className="text-xl sm:text-2xl font-light mb-8 max-w-3xl mx-auto">
             Custom. Clean. Feedback-driven. No bloated tools.
